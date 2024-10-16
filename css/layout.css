@@ -1,0 +1,334 @@
+/*
+	Student: Getahun G Endalamaw
+	File Name: index.html
+	Date: 10/13/2024
+ */
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline:1px solid red;
+}
+
+body, header, nav, main, footer, img, h1, h3, ul, section, article, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color:#f6eee4;
+}
+
+img {
+    max-width: 95%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide tablet-desk */
+.tablet-desk {
+    display: none;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    color: #2a1f14;
+    padding: 1%;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Merriweather', serif;
+    text-shadow: 4px 4px 12px #493746;
+}
+
+header h3 {
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: Futura, Arial, sans-serif;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color:#2a1f1400;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.15em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    border: 1px solid #6d4d6a;
+    border-radius: 2px;
+   
+
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding-top :0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color:#f6eee4;
+    font-family: 'Lato', sans-serif;
+}
+
+main h2 {
+    color: #214528dd;
+}
+
+main p {
+    color: #160f2ebd;
+    font-size: 1.25em;
+}
+
+main a {
+    text-decoration: none;
+    color: #417589;
+    font-weight: bold;
+}
+
+main ul {
+    list-style-type: square;
+    font-size: 1.15em;
+}
+
+main ul li:last-child {
+    padding-bottom: 2%;
+}
+
+article, figure {
+    padding: 2%;
+}
+
+figure {
+    border: 2px solid #4a1a3a;
+    margin: 2% auto;
+    background-color: rgba(120, 66, 53, 0.347);
+    text-align: center;
+}
+
+figcaption {
+    padding: 2%;
+}
+
+section h1 {
+    font-size: 2.5em;
+}
+
+.action {
+    font-size: 1.25em;
+    color: #213b45;
+    font-weight: bold;
+    font-variant-caps: all-small-caps; 
+}
+
+.round {
+    border-radius: 8px;
+}
+
+#ai ul {
+    margin-left: 8%;
+}
+
+#vehicle a {
+    color: #213b45;
+}
+
+.samples {
+    border: 1px solid #895341;
+    padding: 2%;
+    background: rgba(181, 151, 211, 0.5);
+    box-shadow: 4px 4px 10px #000000f8;
+}
+
+.samples ul {
+    margin-left:7%;
+}
+
+aside{
+    text-align: center;
+    font-size:2em;
+    font-weight:bold;
+    text-shadow: 4px,4px,10px #c5a687;
+}
+aside a{
+    text-decoration: left;
+}
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    color: #2a1f14;
+    font-weight: bold;
+}
+
+footer a {
+    color:#2a1f14;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 600px), print {
+ 
+    /* Tablet Viewport: Show tablet-desk class, hide mobile class */
+    .tablet-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    
+    nav li a {
+        padding: 0.75em;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+    
+    section {
+        grid-column: 1 / span 2;
+    }
+    
+    aside{
+        grid-column: 1/span 2;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    
+    /* Desktop Viewport: Show tab-desk class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        display: inline-block;
+        font-size: 1.25em;
+        font-family: Verdana, Arial, sans-serif;
+        font-weight: bold;
+        width: 25%;
+        float:left;
+        list-style-type:none;
+    }
+
+    nav li a {
+        display: block;
+    color:rgba(0, 0, 0, 0.482);
+    padding-top :1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right:2em;
+   
+    }
+    nav li a:link {
+        color:#ffff;
+    }
+    
+    nav li a:hover {
+        color: #74a9be;
+    }
+    
+    nav li a:active {
+        color: #8cb3d9;
+    }
+    
+    /* Desktop Viewport: Style rules for main content */
+    main {
+        overflow: auto;
+    }
+    
+    figure {
+        max-width: 460px;
+    }
+    
+    aside{
+        grid-column: 1/span 3;
+        font-size: 2em;
+    }
+    /* Desktop Viewport: Style rules for footer content */
+    footer {
+        clear: left;
+    }
+    
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    
+    /* Desktop Viewport: Style rules for body and  container */
+    body {
+        background: linear-gradient(#e3eef2, #417589);
+        background-repeat: no-repeat;
+    }
+    
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+    
+    /* Desktop Viewport: Style rule for header content */
+    header {
+        color: #417589;
+    }
+    
+    /* Desktop Viewport: Style rule for main content */
+    main {
+        background-color: #e3eef2;
+    }
+    
+    aside{
+        grid-column: 1/span 4;
+        font-size: 3em;
+        }
+    /* Desktop Viewport: Style rule for footer content */
+    footer, footer a {
+        color: #e5e9fc;
+    }
+    
+}
+
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
